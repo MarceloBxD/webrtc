@@ -1,0 +1,50 @@
+:root {
+  --main-bg-color: #030303;
+  --main-text-color: #fff;
+  --font-family: "Roboto", sans-serif;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+  margin: 0;
+  align-items: center;
+  justify-content: center;
+  padding: 0 50px;
+  background-color: var(--main-bg-color);
+}
+
+.welcome {
+  position: fixed;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: var(--main-text-color);
+  font-family: var(--font-family);
+  font-size: 1.5em;
+  animation: slideIn 0.3s;
+}
+
+@keyframes slideIn {
+  from {
+    top: -50px;
+  }
+  to {
+    top: 10px;
+  }
+}
+
+video {
+  max-width: calc(50% - 100px);
+  margin: 0 50px;
+  box-sizing: border-box;
+  border-radius: 2px;
+  padding: 0;
+  border: 1px solid #ccc;
+}
+
+/* deixando o remoteVideo como none por padrão */
+
+#remoteVideo {
+  display: none;
+}
